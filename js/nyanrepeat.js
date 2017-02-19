@@ -1,6 +1,8 @@
+/*! nyanRepeat v1.1 | (c) 2017 Nyan ID | www.facebook.com/ryan.hac */
 var nyan = {
 	repeat: {
-		init: function (debug = false) {
+		init: function (debug) {
+			debug = debug || false;
 			var t0 = performance.now();
 			var data_repeat = $('[data-repeat]');
 			$.each(data_repeat, function (i) {
