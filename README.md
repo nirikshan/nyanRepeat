@@ -53,3 +53,19 @@ nyan.repeat.init(); /* Call nyanRepeat */
 | `data-repeat-item` | array key yang akan di tampilkan element | "`arraykey`" | `data-repeat-item="title"` |
 | `data-repeat-attr` | array key yang akan di tampilkan di attribut  | "`arraykey in attributname`" or "`arraykey in attributkey,anotherArrayKey in anotherAttributName`" | `data-repeat-attr="link in href"` |
 
+## Demo
+Kamu bisa memcoba demo dari nyanRepeat [disini](https://nyancodeid.github.io/nyanrepeat/)
+Atau kamu bisa langsung coba di jsFiddle [disini](https://jsfiddle.net/fpj04fqk/)
+
+## License
+
+This software is provided free of charge and without restriction under the [MIT License](LICENSE)
+
+## Authors
+
+**Ryan Aunur Rassyid**
+
++ <https://www.facebook.com/ryan.hac>
++ <https://github.com/nyancodeid>
+
+Build with Love in Jombang, East Java, Indonesia 
