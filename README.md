@@ -16,4 +16,40 @@ DOM Repeat like ng-repeat, work with jQuery
 ```
 
 
-## Demo
+## Example
+
+### HTML
+```html
+<div data-repeat="posts">
+  <h2 data-repeat-item="title"></h2>
+  <span data-repeat-item="subtitle"></span>
+  <a data-repeat-attr="link in href" data-repeat-item="download"></a>
+</div>
+```
+
+### Javascript
+```javascript
+var posts = [
+  {
+    title: 'Foo Bar 1',
+    subtitle: 'foo bar subtitle',
+    link: 'foo.html',
+    download: 'boom.zip'
+  },
+  {
+    title: 'Foo Bar 2',
+    subtitle: 'foo bar subtitle',
+    link: 'bar.html',
+    download: 'anotherBoom.zip'
+  }
+];
+nyan.repeat.init(); /* Call nyanRepeat */
+```
+
+### Description
+| Attribut        | Value | Syntax | Example |
+| ------------- |:-------------|:-----|:-----|
+| `data-repeat`     | variabel array yang akan di Repeat | "`arrayname`" | `data-repeat="posts"` |
+| `data-repeat-item` | array key yang akan di tampilkan element | "`arraykey`" | `data-repeat-item="title"` |
+| `data-repeat-attr` | array key yang akan di tampilkan di attribut  | "`arraykey in attributname`" or "`arraykey in attributkey,anotherArrayKey in anotherAttributName`" | `data-repeat-attr="link in href"` |
+
